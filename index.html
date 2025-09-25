@@ -1,108 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>365Lottery • Play, Win & Earn Daily</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>365 Lottery — Official</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
-      color: #333;
-      line-height: 1.6;
+    :root{
+      --primary:#E53935;   /* red */
+      --accent:#111218;    
+      --light:#ffffff;
+      --muted:#f3f4f8;
+      --button:#5b4bd6;
+      font-family: "Inter", "Roboto", Arial, sans-serif;
     }
-    header {
-      background-color: #e60000;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .banner {
-      width: 100%;
-      display: block;
-      max-height: 300px;
-      object-fit: cover;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-    .description {
-      font-size: 1.1em;
-      margin-bottom: 1.5em;
-    }
-    .cta {
-      display: inline-block;
-      background-color: #e60000;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 5px;
-      margin-bottom: 40px;
-    }
-    .cta:hover {
-      background-color: #cc0000;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-      border-top: 1px solid #ddd;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.5em; }
-      .description { font-size: 1em; }
-      .cta { font-size: 1em; padding: 12px 20px; }
-    }
+    body{margin:0;background:#fff;color:var(--accent);font-size:16px;line-height:1.35}
+    .container{max-width:920px;margin:0 auto;padding:18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{width:60px;height:60px;border-radius:12px}
+    .btn{padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.login{border:2px solid var(--button);color:var(--button)}
+    .btn.register{background:var(--button);color:#fff}
+    .hero{text-align:center;background:var(--muted);padding:26px;border-radius:18px;margin-top:14px}
+    .hero img{width:120px;margin-bottom:12px;border-radius:16px}
+    .hero h2{margin:0;font-size:26px}
+    .cta{display:inline-block;padding:12px 20px;border-radius:14px;background:var(--primary);color:#fff;font-weight:700;text-decoration:none}
+    .card{margin-top:20px;background:#fff;border-radius:14px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+    .card h3{margin:0 0 12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #eee;padding:12px;text-align:left}
+    th{background:#fafafa}
+    .footer-cta{text-align:center;margin:24px 0}
+    .secondary-btn{padding:12px 20px;border-radius:14px;background:#222;color:#fff;text-decoration:none;font-weight:700}
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>365Lottery • Play, Win &amp; Earn Daily</h1>
-  </header>
-
-  <img
-    src="https://i.imgur.com/YOUR_IMAGE_URL.jpg"
-    alt="365 Lottery Banner"
-    class="banner">
-
   <div class="container">
-    <div class="description">
-      365Lottery is a trending mobile gaming app that combines fun and earning opportunities. With a wide range of games, daily lotteries, Colour Trading, and sports challenges, the platform offers users a chance to win real cash while enjoying their favorite games.
-
-      Licensed by the Curacao Gaming Authority, 365Lottery ensures a secure and fair environment for all players. It supports convenient payment methods like UPI, Paytm, PhonePe, and NetBanking, making deposits and withdrawals easy for Indian users.
-
-      New users can take advantage of welcome bonuses, referral rewards, and daily deposit offers (up to ₹7000). The app also includes leaderboards and regular contests for more chances to win big.
-
-      One of the app’s standout features is Colour Trading, a fast-paced prediction game that allows users to earn by predicting outcomes based on color combinations. It’s a popular choice for players seeking quick results and real-cash earnings.
-
-      For seamless access, users can simply go to 365 Lottery Login to manage their accounts, check bonuses, and start playing instantly. Whether you’re looking to pass time or earn extra income, 365Lottery offers a reliable and entertaining platform.
-
-      However, it’s important to play responsibly and be aware of potential financial risks.
-
-      Start today with 365 Lottery Login and explore the excitement of games like Colour Trading for your chance to win daily!
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="brand">
+        <img src="365-lottery-logo.jpg" alt="365 Lottery Logo" />
+        <h1 style="font-size:18px;margin:0">365 Lottery</h1>
+      </div>
+      <div>
+        <a class="btn login" href="https://365lottery1.com/#/login">LOGIN</a>
+        <a class="btn register" href="https://365lottery1.com/#/register?invitationCode=37664142531">REGISTER</a>
+      </div>
     </div>
 
-    <a
-      href="https://365lottery1.com/#/register?invitationCode=37664142531"
-      class="cta"
-      target="_blank">
-      Register &amp; Play Now
-    </a>
-  </div>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="365-lottery-logo.jpg" alt="365 Lottery Post" />
+      <h2>Stay Lucky, Stay Winning with 365 Lottery!</h2>
+      <p>Master the art of luck and strategy. Exciting wins & daily rewards await you.</p>
+      <a class="cta" href="https://365lottery1.com/#/register?invitationCode=37664142531">🎉 Register Now</a>
+    </section>
 
-  <footer>
-    &copy; 2025 365Lottery. Play responsibly.
-  </footer>
+    <!-- Gift Code -->
+    <div class="card">
+      <h3>365 Lottery GIFT CODE (Updates Daily)</h3>
+      <table>
+        <tr>
+          <th>App Name</th>
+          <td>365 Lottery App</td>
+        </tr>
+        <tr>
+          <th>Invitation Code</th>
+          <td>
+            <a href="https://365lottery1.com/#/register?invitationCode=37664142531" style="color:#E53935;font-weight:700;text-decoration:none">
+              37664142531 (Click to Join)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Best Feature</th>
+          <td>Best Gaming Environment • Daily Offers</td>
+        </tr>
+        <tr>
+          <th>Refer & Earn</th>
+          <td>Permanent Commission Up To 85%</td>
+        </tr>
+        <tr>
+          <th>APK Size</th>
+          <td>6.3 MB</td>
+        </tr>
+      </table>
+    </div>
 
-</body>
-</html>
+    <!-- Footer CTA -->
+    <div class="footer-cta">
+      <a class="secondary-btn" href="https://365lottery1.com/#/register?invitationCode=37664142531">
+        🚀 Join 365 Lottery Now
+
