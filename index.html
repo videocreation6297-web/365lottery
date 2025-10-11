@@ -15,19 +15,60 @@
       color: #222;
     }
     header {
-      background-color: #ff1a1a;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #fff;
       color: white;
-      padding: 15px;
+      padding: 15px 0;
       text-align: center;
     }
     header img {
       width: 60px;
+      height: 60px;
       vertical-align: middle;
+      margin-top: 10px;
+      /*aspect-ratio: 1 / 1;*/
     }
     header h1 {
       display: inline-block;
       font-size: 24px;
       margin-left: 10px;
+    }
+    header p{
+      /*border: red solid 1px;*/
+      width: 300px;
+      height: 45px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    header a {
+      display: block;
+      text-decoration: none;
+      border: #1E90FF solid 1px;
+      color: #1E90FF;
+      font-weight: bold;
+      border-radius: 5px;
+      height: 45px;
+      font-size: 15px;
+      line-height: 45px;
+      width: 35%;
+      text-align: center;
+    }
+    header a:nth-of-type(2){
+      background-color: #1E90FF;
+      color: #fff;
+    }
+    @media screen and (max-width: 400px){
+      header p{
+        /*border: red solid 1px;*/
+      }
+      header a {
+        font-size: 10px;
+      }
     }
     nav {
       background-color: black;
@@ -49,8 +90,11 @@
       color: white;
     }
     .hero {
+      width: 90%;
+      margin: 0 auto;
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px 0;
+      background-color:   #DCDCDC;
     }
     .hero img {
       width: 120px;
@@ -114,25 +158,31 @@
     }
     footer a {
       color: #ff4d4d;
-      text-decoration: none;
+      /*text-decoration: none;*/
       margin: 0 8px;
     }
+
   </style>
 </head>
 <body>
 
   <header>
-    <img src="365logo.png" alt="365 Lottery Logo">
+    <img src="./IMG_20251007_135013_351.jpg" alt="365 Lottery Logo">
     <h1>365 Lottery</h1>
+      <p>
+        <a href="https://365lottery1.com/#/register?invitationCode=37664142531">LOGIN</a>
+     <a href="https://365lottery1.com/#/register?invitationCode=37664142531">REGISTER</a>
+      </p>
+     
   </header>
 
-  <nav>
+  <!-- <nav>
     <a href="https://365lottery1.com/#/register?invitationCode=37664142531">LOGIN</a>
     <a href="https://365lottery1.com/#/register?invitationCode=37664142531">REGISTER</a>
-  </nav>
+  </nav> -->
 
   <div class="hero">
-    <img src="365logo.png" alt="365 Lottery">
+    <!-- <img src="./IMG_20251007_135013_351.jpg" alt="365 Lottery"> -->
     <h2>365Lottery: Play, Win, and Earn Daily!</h2>
     <p>🎯Join 365 Lottery and win real cash every day. It's easy to play, safe to use, and you get a free bonus 58rs just for signing up.</p>
     <a href="https://365lottery1.com/#/register?invitationCode=37664142531">
@@ -173,12 +223,53 @@
     <p>However, it’s important to <strong>play responsibly</strong> and be aware of potential financial risks.</p>
     <p>Start today with <a href="https://365lottery1.com/#/register?invitationCode=37664142531" target="_blank"><strong>365 Lottery Login</strong></a> and explore the excitement of games like <strong>Colour Trading</strong> for your chance to win daily!</p>
   </div>
-
+  <style>
+      .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .footer > i{
+          font-style: normal;
+      }
+      .footer > ul{
+          display: flex;
+          list-style: none;
+          flex-direction: row;
+          justify-content: space-around;
+          
+          padding: 0;
+          margin: 0;
+      }
+      .footer > ul > li{
+          display: block;
+      }
+      @media screen and (max-width: 400px){
+       .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-wrap-mode: nowrap;
+          font-size: 12px;
+       }
+       .footer > ul {
+         text-wrap-mode: nowrap;
+       }
+       .footer > ul > li {
+         text-wrap-mode: nowrap;
+       }
+       .footer a {
+          color: #ff4d4d;
+          /*text-decoration: none;*/
+          /*margin: 0 8px;*/
+          text-wrap-mode: nowrap;
+          font-size: 12px;
+        } 
+    }
+  </style>
   <footer>
-    <p>
-      <a href="#">Home</a> |
-      <a href="#">Privacy Policy</a> |
-      <a href="#">About Us</a>About Us – 365Lottery Welcome to 365Lottery - India's growing hub for online gaming, lottery, and real cash rewards.At 365Lottery, we aim to create a fun, secure, and rewarding experience for everyone. Whether you're a casual gamer or a lottery enthusiast, our platform offers a variety of games, colour trading challenges, and sports predictions that give you the opportunity to win real money every day.
+    
+      <!-- <p>About Us – 365Lottery Welcome to 365Lottery - India's growing hub for online gaming, lottery, and real cash rewards.At 365Lottery, we aim to create a fun, secure, and rewarding experience for everyone. Whether you're a casual gamer or a lottery enthusiast, our platform offers a variety of games, colour trading challenges, and sports predictions that give you the opportunity to win real money every day.
 What We Offer:
 ₹58 Signup Bonus for new users
 Daily Gift Codes and promotions
@@ -194,11 +285,20 @@ Safe and secure gaming environment
 Frequent rewards and contests
 Easy-to-use mobile interface
 Community-driven and user-focused platform
-Join the 365Lottery family and explore a world of fun, games, and real rewards. Your journey to entertainment and earnings starts here! |
-<button class=’aboutus-btn' about us<button>  <a href="#">Contact Us</a> |
-      <a href="#">Disclaimer</a>
-    </p>
-    <p>© 2025 365 Lottery</p>
+Join the 365Lottery family and explore a world of fun, games, and real rewards. Your journey to entertainment and earnings starts here!</p>  -->
+      
+    
+    <div class="footer">
+      <i>© 2025 365 Lottery</i> 
+      <ul>
+          <li><a href="./index.html">Home</a> |</li>
+          <!-- <li><a href="#">Privacy Policy</a> |</li> -->
+          <li><a href="./about.html">About Us</a>|</li>
+          <li><a href="https://t.me/Lottery365Teacher">Contact Us</a> |</li>
+          <li><a href="./claimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+      
   </footer>
 
 </body>
